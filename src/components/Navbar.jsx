@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import logo from '../../logo.png'
 
 function Navbar({ schoolName, userName, userRole, onMenuToggle, darkMode, onToggleDarkMode, notificationsOpen, onToggleNotifications, onLogout }) {
   const [profileOpen, setProfileOpen] = useState(false)
@@ -18,7 +19,7 @@ function Navbar({ schoolName, userName, userRole, onMenuToggle, darkMode, onTogg
             </svg>
           </button>
           <div className="hidden items-center gap-3 sm:flex">
-            <img src="/logo.png" alt="Cavite State University" className="h-10 w-10 flex-shrink-0 object-contain" />
+            <img src={logo} alt="Cavite State University" className="h-10 w-10 flex-shrink-0 object-contain" />
           </div>
           <div>
             <p className="text-sm text-slate-500 dark:text-slate-400">{schoolName}</p>

@@ -1,3 +1,5 @@
+import logo from '../../logo.png'
+
 function Logo({ size = 'md' }) {
   const sizeMap = {
     sm: 'w-10 h-10',
@@ -6,7 +8,7 @@ function Logo({ size = 'md' }) {
   }
 
   return (
-    <img src="/logo.png" alt="Cavite State University" className={`${sizeMap[size]} flex-shrink-0 object-contain`} />
+    <img src={logo} alt="Cavite State University" className={`${sizeMap[size]} flex-shrink-0 object-contain`} />
   )
 }
 

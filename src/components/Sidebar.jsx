@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import logo from '../../logo.png'
 
 const icons = {
   Dashboard: (
@@ -59,7 +60,7 @@ function Sidebar({ navItems, activePage, onNavigate, isOpen, onClose }) {
     <>
       <div className={`hidden w-72 shrink-0 border-r-2 border-brand/20 bg-gradient-to-b from-white to-brand/5 p-6 shadow-soft dark:border-brandLight/20 dark:bg-gradient-to-b dark:from-slate-900 dark:to-brandLight/5 ${isOpen ? 'lg:block' : 'lg:hidden'}`}>
         <div className="mb-10 flex items-center gap-4 rounded-2xl border-2 border-brand/20 bg-gradient-to-r from-brand/10 to-brandLight/10 p-4 dark:border-brandLight/20 dark:bg-gradient-to-r dark:from-brandLight/10 dark:to-brand/10">
-          <img src="/logo.png" alt="Cavite State University" className="h-14 w-14 flex-shrink-0 object-contain" />
+          <img src={logo} alt="Cavite State University" className="h-14 w-14 flex-shrink-0 object-contain" />
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.24em] text-brand dark:text-brandLight">Portal</p>
             <h2 className="mt-1 text-sm font-bold text-slate-900 dark:text-slate-100">Cavite State University-Tanza</h2>
@@ -93,7 +94,7 @@ function Sidebar({ navItems, activePage, onNavigate, isOpen, onClose }) {
           <div className="w-72 border-r-2 border-brand/20 bg-gradient-to-b from-white to-brand/5 p-6 shadow-soft dark:border-brandLight/20 dark:bg-gradient-to-b dark:from-slate-900 dark:to-brandLight/5">
             <div className="mb-10 flex items-center justify-between gap-4">
               <div className="flex items-center gap-3 flex-1 rounded-2xl border-2 border-brand/20 bg-gradient-to-r from-brand/10 to-brandLight/10 p-3 dark:border-brandLight/20 dark:bg-gradient-to-r dark:from-brandLight/10 dark:to-brand/10">
-                <img src="/logo.png" alt="Cavite State University" className="h-12 w-12 flex-shrink-0 object-contain" />
+                <img src={logo} alt="Cavite State University" className="h-12 w-12 flex-shrink-0 object-contain" />
                 <div>
                   <p className="text-xs font-bold uppercase tracking-[0.24em] text-brand dark:text-brandLight">Portal</p>
                   <h2 className="mt-1 text-sm font-bold text-slate-900 dark:text-slate-100">CSU-Tanza</h2>

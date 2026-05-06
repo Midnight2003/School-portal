@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Button from '../components/Button.jsx'
 import Input from '../components/Input.jsx'
+import logo from '../../logo.png'
 
 function Signup({ onSignupSuccess, onSwitchToLogin }) {
   const [name, setName] = useState('')
@@ -40,7 +41,7 @@ function Signup({ onSignupSuccess, onSwitchToLogin }) {
         {/* Logo and Header */}
         <div className="text-center mb-8">
           <div className="flex justify-center mb-6">
-            <img src="/logo.png" alt="CSU-Tanza" className="h-20 w-20 object-contain" />
+            <img src={logo} alt="CSU-Tanza" className="h-20 w-20 object-contain" />
           </div>
           <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-2">Student Portal</h1>
           <p className="text-slate-600 dark:text-slate-400">Cavite State University-Tanza</p>
