@@ -32,7 +32,7 @@ function Documents({ documentHistory }) {
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Request hard copies of certificates including COG. Grades are also available online.</p>
             </div>
             <div className="rounded-3xl bg-brand/10 px-4 py-3 text-sm font-bold text-brand dark:bg-brandLight/10 dark:text-brandLight">
-              Demo form
+              Request form
             </div>
           </div>
 

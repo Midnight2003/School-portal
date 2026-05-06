@@ -17,14 +17,13 @@ function Login({ onLoginSuccess, onSwitchToSignup }) {
     // Simulate API call
     setTimeout(() => {
       if (email && password) {
-        // Mock authentication - check demo accounts
-        const demoUsers = {
+        const portalUsers = {
           student: { email: 'student@csu.edu.ph', password: '123', name: 'Juan Dela Cruz', role: 'student' },
           teacher: { email: 'reyes@csu.edu.ph', password: '123', name: 'Prof. Reyes', role: 'teacher' },
           admin: { email: 'admin@csu.edu.ph', password: '123', name: 'Admin User', role: 'admin' }
         }
-        
-        const user = demoUsers[role]
+
+        const user = portalUsers[role]
         if (user && user.email === email && user.password === password) {
           onLoginSuccess({ ...user, email })
         } else {
@@ -113,13 +112,6 @@ function Login({ onLoginSuccess, onSwitchToSignup }) {
             </p>
           </div>
 
-          {/* Demo Info */}
-          <div className="mt-6 rounded-2xl border border-brand/20 bg-brand/5 p-4 text-xs text-slate-600 dark:border-brandLight/20 dark:bg-brandLight/5 dark:text-slate-400">
-            <p className="font-bold text-brand dark:text-brandLight mb-2">Demo Accounts</p>
-            <p><strong>Student:</strong> student@csu.edu.ph / 123</p>
-            <p><strong>Teacher:</strong> reyes@csu.edu.ph / 123</p>
-            <p><strong>Admin:</strong> admin@csu.edu.ph / 123</p>
-          </div>
         </div>
       </div>
     </div>
