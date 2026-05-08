@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logo from '../../logo.png'
+import logo from '../assets/logo.png'
 
 function Navbar({ schoolName, userName, userRole, onMenuToggle, darkMode, onToggleDarkMode, notificationsOpen, onToggleNotifications, onLogout }) {
   const [profileOpen, setProfileOpen] = useState(false)

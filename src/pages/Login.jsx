@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Button from '../components/Button.jsx'
 import Input from '../components/Input.jsx'
-import logo from '../../logo.png'
+import logo from '../assets/logo.png'
 
 function Login({ onLoginSuccess, onSwitchToSignup }) {
   const [email, setEmail] = useState('')

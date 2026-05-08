@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import logo from '../../logo.png'
+import logo from '../assets/logo.png'
 
 const icons = {
   Dashboard: (
